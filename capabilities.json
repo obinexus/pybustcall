@@ -1,0 +1,19 @@
+{
+  "binding": "pybustcall",
+  "version": "0.1.0",
+  "capabilities": [
+    "cache.bust",
+    "daemon.delegate", 
+    "semver.resolve"
+  ],
+  "endpoints": {
+    "bust": "/api/v1/bust",
+    "status": "/api/v1/status",
+    "capabilities": "/api/v1/capabilities"
+  },
+  "fault_tolerance": {
+    "max_stage": 12,
+    "default_stage": 3,
+    "p2p_fallback": true
+  }
+}
